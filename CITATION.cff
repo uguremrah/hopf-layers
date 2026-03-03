@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "hopf-layers: Differentiable Fiber Bundle Decompositions for Geometric Deep Learning"
+authors:
+  - family-names: "Surat"
+    given-names: "Ugur Emrah"
+    email: "uguremrahsurat@gmail.com"
+repository-code: "https://github.com/uguremrah/hopf-layers"
+license: MIT
+version: 0.1.0
+date-released: 2026-03-03
+keywords:
+  - hopf-fibration
+  - fiber-bundles
+  - geometric-deep-learning
+  - pytorch
+  - lattice-gauge-theory
+  - quaternions
+  - topological-features
+  - differentiable-geometry
+abstract: >-
+  PyTorch package implementing all three Hopf fibrations
+  (real, classical, quaternionic) as differentiable neural
+  network modules. Provides parameter-free geometric
+  decomposition of quaternionic fields into base manifold
+  coordinates, fiber angles, and topological transition
+  indicators with full gradient flow support.
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Surat"
+      given-names: "Ugur Emrah"
+  title: "Differentiable Hopf Fibrations for Interpretable Geometric Feature Extraction"
+  year: 2026

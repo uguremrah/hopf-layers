@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.0+](https://img.shields.io/badge/pytorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-96%20passing-brightgreen.svg)](https://github.com/uguremrah/hopf-layers/actions)
+[![Tests](https://img.shields.io/badge/tests-102%20passing-brightgreen.svg)](https://github.com/uguremrah/hopf-layers/actions)
 
 Differentiable fiber bundle decompositions for geometric deep learning.
 
@@ -207,7 +207,7 @@ See `experiments/README.md` for detailed instructions and configuration options.
 # Install with development dependencies
 pip install -e ".[dev]"
 
-# Run the test suite (96 tests)
+# Run the test suite (102 tests)
 pytest tests/ -v
 
 # Run with coverage
@@ -219,24 +219,37 @@ pytest tests/ --cov=hopf_layers --cov-report=term-missing
 ```
 hopf-layers/
   src/hopf_layers/       # Core library
-  tests/                 # Test suite (96 tests)
+  tests/                 # Test suite (102 tests)
   experiments/           # Reproducible experiments
   examples/              # Usage examples
   notebooks/             # Analysis and visualization
-  paper/                 # Manuscript and figures
 ```
 
 ---
 
 ## Citation
 
+If you use the software:
 ```bibtex
-@software{surat2026hopflayers,
+@misc{surat2026hopflayers,
   author = {Surat, Ugur Emrah},
   title = {hopf-layers: Differentiable Fiber Bundle Decompositions
            for Geometric Deep Learning},
   year = {2026},
-  url = {https://github.com/uguremrah/hopf-layers}
+  publisher = {GitHub},
+  howpublished = {\url{https://github.com/uguremrah/hopf-layers}},
+  note = {PyTorch package implementing all three Hopf fibrations
+          as differentiable neural network modules}
+}
+```
+
+If you use the paper:
+```bibtex
+@article{surat2026hopf,
+  author = {Surat, Ugur Emrah},
+  title = {Differentiable Hopf Fibrations for Interpretable
+           Geometric Feature Extraction},
+  year = {2026}
 }
 ```
 
