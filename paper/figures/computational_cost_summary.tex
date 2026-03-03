@@ -1,0 +1,12 @@
+% Computational cost comparison: raw passthrough vs Classical HopfLayer (B=32, L=16, CPU)
+\begin{tabular}{r r r r}
+\toprule
+Metric & Raw & Classical HopfLayer & Overhead \\
+\midrule
+Forward (ms) & 0.002 & 1.206 & 754.0x \\
+Forward+Backward (ms) & 0.119 & 2.770 & 23.2x \\
+Peak memory (KB) & 0.1 & 2.0 & 21.7x \\
+Output channels & 8 & 12 & +50% \\
+\bottomrule
+\end{tabular}
+% \label{tab:computational-cost}

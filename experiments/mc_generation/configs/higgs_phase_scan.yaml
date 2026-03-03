@@ -1,0 +1,42 @@
+# SU(2)+adjoint Higgs — kappa-beta scan for phase classification
+#
+# Phase diagram (schematic):
+#   - Confined:  small beta, small kappa  (disordered gauge, disordered Higgs)
+#   - Higgs:     large kappa              (ordered Higgs, SSB SU(2)->U(1))
+#   - Coulomb:   large beta               (ordered gauge, disordered Higgs)
+#
+# We scan kappa at several beta values to cross the confinement-Higgs transition.
+
+description: "SU(2)+adjoint Higgs phase scan for experiment 1"
+
+lattice_sizes: [8, 16, 32]
+
+# Fixed gauge coupling values
+betas: [1.0, 2.0, 4.0]
+
+# Kappa scan (hopping parameter) — crosses the Higgs transition
+kappas:
+  - 0.05
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.5
+  - 0.7
+  - 1.0
+  - 1.5
+  - 2.0
+
+# Higgs potential parameters
+m2: 1.0
+lambda: 0.5
+
+# MC parameters
+n_configs: 833
+n_therm: 500
+n_skip: 10
+gauge_epsilon: 0.5
+higgs_epsilon: 0.3
+seed_base: 123
+
+output_dir: "data/higgs_phase"
+file_pattern: "su2higgs_beta{beta:.1f}_kappa{kappa:.2f}_L{L}.npz"

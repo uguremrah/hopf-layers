@@ -1,0 +1,38 @@
+# Pure SU(2) gauge theory — beta scan for phase classification
+# 2D is analytically solvable (no phase transition), but we use it
+# to validate the ML pipeline before moving to 4D.
+#
+# The Hopf layer should detect structure even in 2D:
+#   - Low beta: disordered configs  (random plaquettes)
+#   - High beta: ordered configs    (identity-like plaquettes)
+
+description: "Pure SU(2) beta scan for phase classification baseline"
+
+# Lattice sizes for finite-size scaling
+lattice_sizes: [8, 16, 32]
+
+# Beta values spanning disordered -> ordered crossover
+betas:
+  - 0.5
+  - 1.0
+  - 1.5
+  - 2.0
+  - 2.5
+  - 3.0
+  - 3.5
+  - 4.0
+  - 5.0
+  - 6.0
+  - 8.0
+  - 10.0
+
+# MC parameters
+n_configs: 1250       # per (beta, L) point
+n_therm: 500          # thermalization sweeps
+n_skip: 10            # decorrelation sweeps between measurements
+epsilon: 0.5          # Metropolis step size
+seed_base: 42         # seed = seed_base + L * 1000 + beta_idx
+
+# Output
+output_dir: "data/pure_gauge"
+file_pattern: "su2_beta{beta:.1f}_L{L}.npz"

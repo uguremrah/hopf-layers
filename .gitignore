@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Data and models (generated, not tracked)
+experiments/*/data/*.pt
+experiments/*/data/*.npy
+experiments/*/data/*.npz
+experiments/*/models/*.pt
+experiments/*/models/*.pth
+experiments/*/results/*.csv
+experiments/*/results/*.json
+experiments/*/results/*.png
+
+# Notebook results (regenerable from notebooks)
+notebooks/results/
+
+# Paper LaTeX build artifacts
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.toc
+paper/*.lof
+paper/*.lot
+paper/_render*.png
+paper/_renders/
+paper/main.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs build
+docs/_build/
+
+# Backups
+*.ipynb.bak
+
+# Lock files
+.~lock.*
+
+# uv
+uv.lock
