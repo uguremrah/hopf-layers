@@ -66,6 +66,10 @@ Thumbs.db
 # Docs build
 docs/_build/
 
+# Private folders (kept local, not on GitHub)
+QA/
+paper/
+
 # Backups
 *.ipynb.bak
 
