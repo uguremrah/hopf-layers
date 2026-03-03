@@ -63,7 +63,7 @@ experiments = [
 all = ["hopf-layers[dev,docs,experiments]"]
 
 [project.urls]
-Repository = "https://github.com/ugurEmre/hopf-layers"
+Repository = "https://github.com/uguremrah/hopf-layers"
 Documentation = "https://hopf-layers.readthedocs.io"
 
 [tool.setuptools.packages.find]

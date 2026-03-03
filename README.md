@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.0+](https://img.shields.io/badge/pytorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-96%20passing-brightgreen.svg)](https://github.com/ugurEmre/hopf-layers/actions)
+[![Tests](https://img.shields.io/badge/tests-96%20passing-brightgreen.svg)](https://github.com/uguremrah/hopf-layers/actions)
 
 Differentiable fiber bundle decompositions for geometric deep learning.
 
@@ -33,7 +33,7 @@ pip install hopf-layers
 From source:
 
 ```bash
-git clone https://github.com/ugurEmre/hopf-layers
+git clone https://github.com/uguremrah/hopf-layers
 cd hopf-layers && pip install -e ".[all]"
 ```
 
@@ -231,12 +231,12 @@ hopf-layers/
 ## Citation
 
 ```bibtex
-@software{emre2026hopflayers,
-  author = {Emre, Ugur},
+@software{surat2026hopflayers,
+  author = {Surat, Ugur Emrah},
   title = {hopf-layers: Differentiable Fiber Bundle Decompositions
            for Geometric Deep Learning},
   year = {2026},
-  url = {https://github.com/ugurEmre/hopf-layers}
+  url = {https://github.com/uguremrah/hopf-layers}
 }
 ```
 
